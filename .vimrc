@@ -11,6 +11,11 @@
 ""        print "virtualenv is os.environ!"
 ""EOF
 
+" rope stuff
+let $PYTHONPATH .= ':/Users/gentili/.vim/bundle/ropevim'
+let $PYTHONPATH .= ':/Users/gentili/.vim/bundle/ropemode'
+let $PYTHONPATH .= ':/Users/gentili/.vim/bundle/rope'
+
 " pathogen
 let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
 call pathogen#infect()                      " load everyhting else
