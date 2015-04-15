@@ -40,7 +40,7 @@ set t_Co=256
 
 " code folding
 set foldmethod=indent
-set foldlevel=2
+set foldlevel=8
 set foldnestmax=4
 
 " tasklist
