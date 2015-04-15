@@ -6,4 +6,7 @@ My personal .vim directory
 Installation notes
 ------------------
 
-  * sudo python setup.py install in ropevim
+```sh
+git submodule update --init --recursive
+sudo python setup.py install in ropevim
+```
