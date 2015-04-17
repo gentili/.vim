@@ -24,7 +24,8 @@ call pathogen#helptags()                    " load plugin help files
 " vim
 set nobackup
 set nocp
-set statusline=[%{virtualenv#statusline()}]
+"set statusline=[%{virtualenv#statusline()}]
+set statusline=[%l,%c,%p%%]
 set statusline+=%t
 set ls=2
 
