@@ -7,6 +7,9 @@ Installation notes
 ------------------
 
 ```sh
+git clone 
+ln -s /home/gentili/.vim/.vimrc
+cd .vimrc
 git submodule update --init --recursive
 sudo python setup.py install in ropevim
 ```
