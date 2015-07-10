@@ -7,6 +7,7 @@ Installation notes
 ------------------
 
 ```sh
+cd ~
 git clone 
 ln -s /home/gentili/.vim/.vimrc
 cd .vimrc
