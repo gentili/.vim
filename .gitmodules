@@ -35,3 +35,6 @@
 [submodule "bundle/rope"]
 	path = bundle/rope
 	url = https://github.com/python-rope/rope.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
