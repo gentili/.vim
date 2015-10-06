@@ -27,4 +27,5 @@ xz -d clang*
 mv clang/* .
 cd ~/ycm_temp
 cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycm_temp/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+make ycm_support_libs
 ```
