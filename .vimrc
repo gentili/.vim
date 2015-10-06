@@ -39,14 +39,6 @@ set background=dark
 " set cursorline
 set t_Co=256
 
-" code folding
-set foldmethod=indent
-set foldlevel=8
-set foldnestmax=4
-
-" tasklist
-nnoremap <leader>v <Plug>TaskList
-
 " syntax highlighting
 syntax on
 filetype on                 " enables filetype detection
@@ -55,16 +47,8 @@ filetype plugin indent on   " enables filetype specific plugins
 " colorpack
 colorscheme elflord
 
-" gundo
-nnoremap <F5> :GundoToggle<CR>
-
 " pep8
 let g:pep8_map='<leader>8'
-
-" supertab
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
 
 " virtual env
 let g:virtualenv_auto_activate = 1
