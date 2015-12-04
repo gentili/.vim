@@ -19,6 +19,10 @@ sudo python setup.py install
 cd ~/.vim/bundle/ropevim
 sudo python setup.py install
 
+# C++ support for ubuntu
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+
 # C++ support for OSX
 mkdir -p ~/ycm_temp/llvm_root_dir
 cd ~/ycm_temp/llvm_root_dir
