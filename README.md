@@ -20,6 +20,7 @@ cd ~/.vim/bundle/ropevim
 sudo python setup.py install
 
 # C++ support for ubuntu
+sudo apt-get install python-dev
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 
