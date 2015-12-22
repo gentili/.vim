@@ -52,3 +52,6 @@ let g:pep8_map='<leader>8'
 
 " virtual env
 let g:virtualenv_auto_activate = 1
+
+" ycm
+let g:ycm_confirm_extra_conf = 0
