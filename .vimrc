@@ -1,29 +1,42 @@
-" Add the virtualenv's site-packages to vim path
-""py << EOF
-""import os.path
-""import sys
-""import vim
-""if 'VIRTUAL_ENV' in os.environ:
-""	project_base_dir = os.environ['VIRTUAL_ENV']
-""	sys.path.insert(0, project_base_dir)
-""	activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-""	execfile(activate_this, dict(__file__=activate_this))
-""        print "virtualenv is os.environ!"
-""EOF
-
-" rope stuff
-let $PYTHONPATH .= ':/Users/gentili/.vim/bundle/ropevim'
-let $PYTHONPATH .= ':/Users/gentili/.vim/bundle/ropemode'
-let $PYTHONPATH .= ':/Users/gentili/.vim/bundle/rope'
-
-" pathogen
-let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
-call pathogen#infect()                      " load everyhting else
-call pathogen#helptags()                    " load plugin help files
-
 " vim
 set nobackup
 set nocp
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" General syntax, colour and code
+
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'vim-scripts/Colour-Sampler-Pack'
+
+Plugin 'vim-scripts/ScrollColors'
+
+Plugin 'vim-syntastic/syntastic'
+
+" Python stuff
+Plugin 'vim-scripts/pep8'
+
+Plugin 'fs111/pydoc.vim'
+
+Plugin 'jmcantrell/vim-virtualenv'
+
+Plugin 'python-rope/ropevim'
+
+Plugin 'python-rope/ropemode'
+
+Plugin 'python-rope/rope'
+
+" " All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 "set statusline=[%{virtualenv#statusline()}]
 set statusline=[%l,%c,%p%%]
 set statusline+=%t
