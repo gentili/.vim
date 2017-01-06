@@ -14,6 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'rdnetto/YCM-Generator'
+
 Plugin 'vim-scripts/Colour-Sampler-Pack'
 
 Plugin 'vim-scripts/ScrollColors'
