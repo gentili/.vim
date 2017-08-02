@@ -35,6 +35,10 @@ Plugin 'python-rope/ropemode'
 
 Plugin 'python-rope/rope'
 
+" Filetypes
+
+Plugin 'pearofducks/ansible-vim'
+
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
