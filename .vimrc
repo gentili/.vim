@@ -35,6 +35,10 @@ Plugin 'python-rope/ropemode'
 
 Plugin 'python-rope/rope'
 
+" Javascript stuf
+
+Plugin 'ternjs/tern_for_vim'
+
 " Filetypes
 
 Plugin 'pearofducks/ansible-vim'

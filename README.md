@@ -8,9 +8,11 @@ Installation notes
 
 ```sh
 cd ~
-ln -s /home/gentili/.vim/.vimrc
+ln -s ~/.vim/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-completer
+./install.py --clang-completer --tern-completer
+cd ~/.vim/bundle/tern-for-vim
+npm install
 ```
