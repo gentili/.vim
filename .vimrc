@@ -51,6 +51,7 @@ set ls=2
 " indentation
 set autoindent
 set softtabstop=4 shiftwidth=4 expandtab
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " visual
 highlight Normal ctermbg=black
