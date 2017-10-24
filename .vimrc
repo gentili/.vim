@@ -23,7 +23,7 @@ Plugin 'vim-scripts/ScrollColors'
 Plugin 'vim-syntastic/syntastic'
 
 " Python stuff
-Plugin 'vim-scripts/pep8'
+Plugin 'nvie/vim-flake8'
 
 Plugin 'fs111/pydoc.vim'
 
@@ -68,7 +68,7 @@ filetype plugin indent on   " enables filetype specific plugins
 colorscheme elflord
 
 " pep8
-let g:pep8_map='<leader>8'
+autocmd FileType python map <buffer> <leader>8 :call Flake8()<CR>
 
 " virtual env
 let g:virtualenv_auto_activate = 1
