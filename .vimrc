@@ -35,6 +35,8 @@ Plugin 'python-rope/ropemode'
 
 Plugin 'python-rope/rope'
 
+Plugin 'Vimjas/vim-python-pep8-indent'
+
 " Filetypes
 
 Plugin 'pearofducks/ansible-vim'
