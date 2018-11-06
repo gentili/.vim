@@ -71,6 +71,7 @@ colorscheme elflord
 
 " pep8
 autocmd FileType python map <buffer> <leader>8 :call Flake8()<CR>
+" let g:syntastic_python_flake8_args='--ignore E501,E124,W503'
 
 " virtual env
 let g:virtualenv_auto_activate = 1
