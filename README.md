@@ -25,7 +25,7 @@ Update notes
 ------------
 
 ```sh
-vim +PluginUpdatel
+vim +PluginUpdate
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 ```
