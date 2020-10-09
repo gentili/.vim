@@ -22,8 +22,12 @@ Plugin 'vim-scripts/ScrollColors'
 
 Plugin 'vim-syntastic/syntastic'
 
+Plugin 'tpope/vim-unimpaired'
+
 " Python stuff
 Plugin 'nvie/vim-flake8'
+
+Plugin 'psf/black'
 
 Plugin 'fs111/pydoc.vim'
 
@@ -71,6 +75,7 @@ colorscheme elflord
 
 " pep8
 autocmd FileType python map <buffer> <leader>8 :call Flake8()<CR>
+autocmd BufWritePre *.py execute ':Black'
 " let g:syntastic_python_flake8_args='--ignore E501,E124,W503'
 
 " virtual env
