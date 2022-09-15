@@ -25,6 +25,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-unimpaired'
 
 " Python stuff
+Plugin 'lambdalisue/vim-pyenv'
+
 Plugin 'nvie/vim-flake8'
 
 Plugin 'psf/black'
