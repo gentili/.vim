@@ -3,6 +3,11 @@ set nobackup
 set nocp
 filetype off
 
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -14,26 +19,21 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
-Plugin 'rdnetto/YCM-Generator'
-
-Plugin 'vim-scripts/Colour-Sampler-Pack'
-
 Plugin 'vim-scripts/ScrollColors'
-
-Plugin 'vim-syntastic/syntastic'
 
 Plugin 'tpope/vim-unimpaired'
 
 " Python stuff
-Plugin 'lambdalisue/vim-pyenv'
+Plugin 'dense-analysis/ale'
+
+# Plugin 'lambdalisue/vim-pyenv'
+# Plugin 'jmcantrell/vim-virtualenv'
 
 Plugin 'nvie/vim-flake8'
 
 Plugin 'psf/black'
 
 Plugin 'fs111/pydoc.vim'
-
-Plugin 'jmcantrell/vim-virtualenv'
 
 Plugin 'python-rope/ropevim'
 
